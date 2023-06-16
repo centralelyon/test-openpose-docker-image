@@ -1,0 +1,49 @@
+# Très long, 1h
+
+$ docker build -t openpose .
+[+] Building 3055.1s (14/14) FINISHED                                                                                                                                                                      
+ => [internal] load build definition from Dockerfile                                                                                                                                                  0.1s
+ => => transferring dockerfile: 1.42kB                                                                                                                                                                0.0s
+ => [internal] load .dockerignore                                                                                                                                                                     0.1s
+ => => transferring context: 2B                                                                                                                                                                       0.0s
+ => [internal] load metadata for docker.io/nvidia/cuda:11.6.1-devel-ubuntu20.04                                                                                                                       1.6s
+ => [auth] nvidia/cuda:pull token for registry-1.docker.io                                                                                                                                            0.0s
+ => [1/9] FROM docker.io/nvidia/cuda:11.6.1-devel-ubuntu20.04@sha256:1539cdf4f5bef13cdec81b63764808e03b97442b4dac1a670107779207bb7e16                                                               109.8s
+ => => resolve docker.io/nvidia/cuda:11.6.1-devel-ubuntu20.04@sha256:1539cdf4f5bef13cdec81b63764808e03b97442b4dac1a670107779207bb7e16                                                                 0.0s
+ => => sha256:1539cdf4f5bef13cdec81b63764808e03b97442b4dac1a670107779207bb7e16 743B / 743B                                                                                                            0.0s
+ => => sha256:697bc9931ef8ea2b996af9bb051366e894c707ee6f39cf91a88476d78ec2b6cd 2.63kB / 2.63kB                                                                                                        0.0s
+ => => sha256:07daf7b8b06581f2245d80257d0dbe292296e2d5bd6694ebf320f8e0ed48901e 15.59kB / 15.59kB                                                                                                      0.0s
+ => => sha256:846c0b181fff0c667d9444f8378e8fcfa13116da8d308bf21673f7e4bea8d580 28.58MB / 28.58MB                                                                                                      1.4s
+ => => sha256:955cfe3d44193ade427143994d4bee4b39ef7cbc289e4d3aba125ce3304fe2f9 23.61MB / 23.61MB                                                                                                      1.6s
+ => => sha256:b787be75b30bfd9c59a3d55b00e4155b6a4378990ce488a7e017e7a93388f65e 7.91MB / 7.91MB                                                                                                        2.2s
+ => => sha256:b1e7941cb3f6c65687539f5be97f1f9570de7290ea3eb16f2b86a3da4ff03244 184B / 184B                                                                                                            1.5s
+ => => extracting sha256:846c0b181fff0c667d9444f8378e8fcfa13116da8d308bf21673f7e4bea8d580                                                                                                             1.4s
+ => => sha256:659b95fa8a28334d1ce2e5172b41c195b2fc365c7da70ed1aee4c4dfcca7174f 6.43kB / 6.43kB                                                                                                        1.7s
+ => => sha256:95dad22db9c8eef3ff09aed2f835d68e1279316e501b90ae0b659c83192da984 1.11GB / 1.11GB                                                                                                       53.9s
+ => => sha256:e0cfbadd03ee432d6881b74c96643d82fa4f37a2d488405b729522ec9a347f78 62.70kB / 62.70kB                                                                                                      1.9s
+ => => sha256:7cf48de512afdd0647c89340dbaddc8b8b36024f948788f8bedbfa9943b04158 1.68kB / 1.68kB                                                                                                        2.1s
+ => => sha256:0e8a112072d717adcd8751b5e82bd81a3709591a4b8d801e42501e8cb0a07ea5 1.52kB / 1.52kB                                                                                                        2.3s
+ => => sha256:54669b7b295c263b90770f840d2ff107a1387ddc4451b78c4a46927fc23f92fd 1.43GB / 1.43GB                                                                                                       63.7s
+ => => sha256:3a5c74d28a81600d37d0dae3ecafedf52d824a9297c3ab67fe50ceee18e8e2ff 85.72kB / 85.72kB                                                                                                      2.7s
+ => => extracting sha256:b787be75b30bfd9c59a3d55b00e4155b6a4378990ce488a7e017e7a93388f65e                                                                                                             0.4s
+ => => extracting sha256:955cfe3d44193ade427143994d4bee4b39ef7cbc289e4d3aba125ce3304fe2f9                                                                                                             0.7s
+ => => extracting sha256:b1e7941cb3f6c65687539f5be97f1f9570de7290ea3eb16f2b86a3da4ff03244                                                                                                             0.0s
+ => => extracting sha256:659b95fa8a28334d1ce2e5172b41c195b2fc365c7da70ed1aee4c4dfcca7174f                                                                                                             0.0s
+ => => extracting sha256:95dad22db9c8eef3ff09aed2f835d68e1279316e501b90ae0b659c83192da984                                                                                                            22.1s
+ => => extracting sha256:e0cfbadd03ee432d6881b74c96643d82fa4f37a2d488405b729522ec9a347f78                                                                                                             0.0s
+ => => extracting sha256:7cf48de512afdd0647c89340dbaddc8b8b36024f948788f8bedbfa9943b04158                                                                                                             0.0s
+ => => extracting sha256:0e8a112072d717adcd8751b5e82bd81a3709591a4b8d801e42501e8cb0a07ea5                                                                                                             0.0s
+ => => extracting sha256:54669b7b295c263b90770f840d2ff107a1387ddc4451b78c4a46927fc23f92fd                                                                                                            32.9s
+ => => extracting sha256:3a5c74d28a81600d37d0dae3ecafedf52d824a9297c3ab67fe50ceee18e8e2ff                                                                                                             0.0s
+ => [2/9] RUN apt-get update --yes && apt-get install --yes --auto-remove         libopencv-dev         protobuf-compiler         libgoogle-glog-dev         libboost-all-dev         libhdf5-dev   242.5s
+ => [3/9] RUN python3 -m pip install --upgrade pip &&     python3 -m pip install         numpy         opencv-python                                                                                 17.8s
+ => [4/9] WORKDIR /openpose                                                                                                                                                                           0.2s 
+ => [5/9] RUN git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose.git ./ &&     git submodule update --init --recursive --remote                                                      48.1s 
+ => [6/9] WORKDIR  /openpose/build/                                                                                                                                                                   0.1s 
+ => [7/9] RUN cmake         -D BUILD_PYTHON=ON         -D BUILD_CAFFE=ON         -D BUILD_EXAMPLES=ON         -D GPU_MODE=CUDA         -D USE_CUDNN=OFF         -D CMAKE_BUILD_TYPE=Release        1010.0s 
+ => [8/9] RUN make --jobs `nproc`                                                                                                                                                                  1605.2s 
+ => [9/9] WORKDIR /data/videos                                                                                                                                                                        0.1s 
+ => exporting to image                                                                                                                                                                               19.3s 
+ => => exporting layers                                                                                                                                                                              19.3s 
+ => => writing image sha256:d0acd6fc2e7027c02b6c4968979bf2950cecec93a7e6d904573c778462bb9138                                                                                                          0.0s 
+ => => naming to docker.io/library/openpose                                                                                                                                                           0.0s 
